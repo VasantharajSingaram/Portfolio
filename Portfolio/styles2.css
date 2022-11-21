@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #000000 !important;
+}
+
+
+.navbar-brand{
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 2rem !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar-nav{
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto', sans-serif;
+    color: white !important;
+ 
+}
+
+.jumb{
+    margin-top: 50px;
+    background-color: #000000;
+   
+}
+.box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+   margin: auto;
+    background: #000000;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+.box::before{
+   content: "";
+   position: absolute;
+   inset: -10px 140px;
+   background: linear-gradient(315deg,#00ccff,#d400d4);
+
+   transition: 0.5s;
+   animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: #162052;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.box img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    z-index: 3;
+}
+
+
+
+  .autograph{
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+  } 
+  
+  .iam{
+    color: rgb(211, 211, 211);
+    font-size: 1.5rem;
+    font-family: 'Caveat', cursive;
+    margin-top: 150px;
+
+  }
+ .text{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+      color: rgb(255, 30, 0);
+ }
+ 
+ .co2{
+    background-color: rgb(0, 0, 0);
+ }
+ .con-3{
+  margin-top: 100px;
+    background-color: #000000;
+ }
+ .con-2{
+    padding-top: 50px;
+    margin-top: 100px;
+    background-color: #000000;
+ }
+
+ .fulskil{
+    color: white;
+    padding-top: 250px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    
+    
+ }
+ .skill{
+    color: aqua;
+
+ }
+
+ .arrow{
+    color: beige;
+ }
+  .intro{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100 !important;
+    color: white;
+  }
+
+  .skills{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1rem;
+  }
+  .tagcloud {
+    /* font-family: 'Poppins', sans-serif;   */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: aqua;
+    margin: auto;
+    width: 50%;
+    
+    
+  }
+  .tagcloud--item:hover {
+    color: #ffea00;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  .card-text{
+    font-size: 0.7rem;
+  }
+
+.theCard{
+    display: flex;
+    justify-content: center;
+}
+  .cardBox {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+      rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+  }
+  
+
+  
+  .cardBox::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 150%;
+    background: #40E0D0;
+  background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    animation: glowing01 5s linear infinite;
+    transform-origin: center;
+    animation: glowing 5s linear infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.myProjects{
+    display: flex;
+    justify-content: center;
+    color: white;
+  margin-top: 50px;
+  font-size: 2rem !important;
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #000000;
+    padding-bottom: 50px;
+}
+.form-control{
+  color: white !important;
+}
+
+
+footer{
+  margin-top: 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: #000000;
+}
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: transparent;
+    color: #fff2f2;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-decoration: none !important;
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    text-decoration: none !important;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    text-decoration: none !important;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #ffffff !important;
+  }
+  
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff !important;
+  }
+  
+  .wrapper .linkedin:hover,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip::before {
+    background: #0077b5;
+    color: #ffffff !important;
+  }
+  
+.lotties{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactlabel{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact{
+  margin-top: 100px;
+  font-size: 2rem;
+  
+}
+
+.form-label{
+  color: white;
+  font-size: 1rem;
+}
+
+a:link{
+  
+  text-decoration: none;
+  
+}
+
+
+
+
+  @media screen and (max-width: 1920px) {
+    .text{
+        font-size: 3rem;
+    }
+    .text02{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text{
+        font-size: 3rem;
+    }
+    .text02{
+        display: none;
+    }
+    .text02{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text{
+        font-size: 2rem;
+    }
+    .text02{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text{
+        display: none;
+    }
+    .text02{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text{
+        display: none;
+    }
+    .text02{
+        display: block;
+    }
+    .box{
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text{
+        font-size: 2rem;
+    }
+    .text02{
+        display: block;
+    }
+    .box{
+        margin-left: -50px;
+    }
+}
